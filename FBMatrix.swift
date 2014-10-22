@@ -46,7 +46,7 @@ struct matrix <ElementType>
 
     subscript (row : Int, column : Int) ->ElementType?
     {
-        precondition(row < self.rows && column < self.columns, "Index out of Bounds")
+        precondition(row < self.rows && column < self.columns, "Index Out Of Bounds")
         return itemAtRow(row,column : column)
     }
     subscript (row : Int) -> mRow
